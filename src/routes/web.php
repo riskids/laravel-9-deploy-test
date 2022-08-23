@@ -35,9 +35,9 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function(){
 
 
 
-Route::group(['middleware' => ['auth']], function () { 
+// Route::group(['middleware' => ['auth']], function () { 
     Route::get('/',[DashboardController::class,'index'])->name('main-dashboard');
-});
+// });
 
 Auth::routes();
 
